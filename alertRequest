@@ -1,0 +1,13 @@
+curl --location --request POST 'http://localhost:5000/create_ticket' \
+--header 'Content-Type: application/json' \
+--data-raw '[
+    {
+        "Type": "bug",
+        "Application": "myapp",
+        "Description": "DB connection failed",
+        "Priority": "P2",
+        "Submiter": "Nonso Enujofor",
+        "Team": "AVI"
+       
+    }
+]'
